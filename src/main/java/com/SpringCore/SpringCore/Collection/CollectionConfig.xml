@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       https://www.springframework.org/schema/beans/spring-beans.xsd">
+   
+    <bean class="com.SpringCore.SpringCore.Collection.Tution" name="Tution1">
+       <property name="Name" value="Scalar"/>
+       
+       <property name="phoneNumber">
+		   <list>
+			   <value>9211898989</value>
+			   <value>0226222289</value>
+			    </list>
+       </property>
+      
+      <property name="addresses">
+		   <set>
+			   <value>Banglore</value>
+			   <value>Delhi</value>
+			    </set>
+       </property>
+       
+       <property name="courses">
+		   <map>
+			   <entry key="Core Java" value="50000" />
+			   <entry key="Python" value="30000" />
+			   </map>
+			   
+       </property>
+      
+       </bean>
+   
+</beans>

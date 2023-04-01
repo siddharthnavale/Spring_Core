@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       https://www.springframework.org/schema/beans/spring-beans.xsd">
+   
+    <bean class="com.SpringCore.SpringCore.AutowiringThroghXMLByType.Pistol" name="p_25">
+       <property name="noOfBullets" value="8"/>
+       <property name="isLoadingRequire" value="false"/>
+       </bean>
+      
+     
+      
+       
+       <bean class="com.SpringCore.SpringCore.AutowiringThroghXMLByType.Player" name="player1" autowire="byType">
+        <property name="playerId" value="1"/>
+        <property name="playerName" value="Armstrong"/>
+       </bean>
+       
+       
+</beans>
